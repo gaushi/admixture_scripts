@@ -1,3 +1,4 @@
+#edit the CV in format where you have headers k and CV
 setwd('/ebio/abt6_projects9/Methylome_variation_HPG1/WGS/data/pool1/EU5_pool1/post_vcf/admixture')
 CVerror <- read.table("P20.CV.txt", header = T)
 CVplot <- ggplot(CVerror, aes(k,CV)) + geom_line() + geom_point(size = rel(4), col= "black")
