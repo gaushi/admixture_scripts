@@ -1,2 +1,2 @@
 # admixture_scripts
-Here are all the scripts used with ADMIXTURE software
+R scripts used for the admixture analysis
