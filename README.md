@@ -1,2 +1,2 @@
 # admixture_scripts
-R scripts used for the admixture analysis
+R scripts used for making plots from results of the admixture analysis
