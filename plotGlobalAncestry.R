@@ -4,9 +4,9 @@ head(misj)
 library(ggplot2)
 library(reshape2)
 misj.m <- melt(misj, id.vars = c("sample", "chr", "gen"))
-levels(misj.m$gen1)
-misj.m
-head(misj.m)
+#levels(misj.m$gen1)
+#misj.m
+#head(misj.m)
 misj.m$gen <- factor(misj.m$gen, levels=c("gen8", "gen20","gen40", "gen50", "gen100", "gen200", "gen400", "gen500"))
 p <- ggplot(misj.m, aes(x=variable, y=value)) +geom_boxplot(aes(group=variable)) +geom_jitter(aes(color=gen),width = 0.2,size=4, alpha=0.8)+facet_grid(~chr)
 #p
